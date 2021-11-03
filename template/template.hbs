@@ -11,11 +11,6 @@
         <p id="PhoneCode" class="card-text">Phone code: +{{numericCode}} </p>
         <p>Language: <span id="language" class="card-text"></span></p>
         <ul>
-            {{!-- {{#each languages}}
-                <li id="language">
-                    Language: {{this.name}}
-                </li>
-            {{/each}} --}}
             {{#each currencies}}
                 <li id="currency">
                     Currency: {{this.name}} ({{this.symbol}}) {{this.code}}
