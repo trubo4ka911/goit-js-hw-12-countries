@@ -1,0 +1,26 @@
+<div class="card">
+    <div class ="flag-container">
+        <img src="{{flag}}" alt="Flag of {{name}}">
+    </div>
+    <div id="cardBody" class="card-body">
+        <h2 class="card-title">Country: {{name}} </h2>
+        <p id="capital" class="card-text">Capital: {{capital}} </p>        
+        <p id="region" class="card-text">Region: {{region}} </p>
+        <p id="subregion" class="card-text">Subegion: {{subregion}} </p>
+        <p class="card-text">Population: <span id="population"></span> </p>
+        <p id="PhoneCode" class="card-text">Phone code: +{{numericCode}} </p>
+        <p>Language: <span id="language" class="card-text"></span></p>
+        <ul>
+            {{!-- {{#each languages}}
+                <li id="language">
+                    Language: {{this.name}}
+                </li>
+            {{/each}} --}}
+            {{#each currencies}}
+                <li id="currency">
+                    Currency: {{this.name}} ({{this.symbol}}) {{this.code}}
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
