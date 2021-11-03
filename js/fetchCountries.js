@@ -25,7 +25,6 @@ function country(e) {
         renderCountryCard(data);
         return data;
       }
-      // errorPopup();
       showAlert(ALERTS.MATCH_RESULTS, `${data.length} results`);
     })
     .then(function (data) {
